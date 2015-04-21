@@ -4,6 +4,7 @@ ehthumbs.db
 
 # C#
 obj/
+bin/
 *.userprefs
 
 # Folder config file
