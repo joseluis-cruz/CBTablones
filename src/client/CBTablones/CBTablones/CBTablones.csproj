@@ -50,6 +50,7 @@
     <Compile Include="Resources\librerias\SQLite.cs" />
     <Compile Include="Resources\esquema\Entorno.cs" />
     <Compile Include="Resources\esquema\Mensaje.cs" />
+    <Compile Include="Resources\esquema\Contacto.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
