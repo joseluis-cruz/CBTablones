@@ -1,5 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Web.Http;
+using Newtonsoft.Json;
 
 namespace ApiRestServerExample.Controllers
 {
@@ -7,16 +10,18 @@ namespace ApiRestServerExample.Controllers
   public class ExampleController : ApiController
   {
     //Este es el controlador de ejemplo no accede a la capa de datos
-
-
     // GET: api/Example
-    public IEnumerable<string> Get()
+    public string Get()
     {
-      return new[] {"value1", "value2"};
+      using (var dbContext = new TestDatabaseEntities1())
+      {
+        var messagesList = dbContext.Messages.ToList();
+        var serializedList = serializer(messagesList);
+        return serializedList;
+      }
     }
 
     // GET: api/Example/5
-     
     public string Get(int id)
     {
       return "value";
@@ -25,6 +30,7 @@ namespace ApiRestServerExample.Controllers
     // POST: api/Example
     public void Post([FromBody] string value)
     {
+      Console.WriteLine(value);
     }
 
     // PUT: api/Example/5
@@ -37,6 +43,12 @@ namespace ApiRestServerExample.Controllers
     public void Delete(int id)
     {
 
+    }
+
+
+    private string serializer(object o)
+    {
+      return JsonConvert.SerializeObject(o, Formatting.None);
     }
   }
 }
