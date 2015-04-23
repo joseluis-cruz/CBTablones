@@ -6,7 +6,7 @@ ehthumbs.db
 obj/
 bin/
 *.userprefs
-packcages/
+packages/
 
 # Folder config file
 Desktop.ini
