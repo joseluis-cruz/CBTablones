@@ -2,4 +2,12 @@
 <resources>
 	<string name="hello">Hello World, Click Me!</string>
 	<string name="app_name">CBTablones</string>
+	<string name="edNombre">Nombre del contacto</string>
+	<string name="edAlias">Alias del contacto</string>
+	<string name="edEMail">E-mail del contacto</string>
+	<string name="caducidad">Caducidad</string>
+	<string name="volatilidad">Volatilidad</string>
+	<string name="aceptar">Aceptar</string>
+	<string name="cancelar">Cancelar</string>
+	<string name="mostrar_contacto">Mostrar Contactos</string>
 </resources>
