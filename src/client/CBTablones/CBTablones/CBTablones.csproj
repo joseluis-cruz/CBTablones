@@ -15,7 +15,7 @@
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
     <AssemblyName>CBTablones</AssemblyName>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
-    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -49,10 +49,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\librerias\SQLite.cs" />
     <Compile Include="Resources\esquema\Entorno.cs" />
+    <Compile Include="Resources\esquema\Mensaje.cs" />
     <Compile Include="Resources\esquema\Contacto.cs" />
     <Compile Include="FormContacto.cs" />
     <Compile Include="Resources\adapter\ContactoAdapter.cs" />
     <Compile Include="ListaContactos.cs" />
+    <Compile Include="Resources\esquema\PermisoLE.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -71,6 +73,7 @@
     <AndroidResource Include="Resources\layout\TextViewItemLo.axml" />
     <AndroidResource Include="Resources\layout\ListaContactosItemLo.axml" />
     <AndroidResource Include="Resources\layout\ListaContactoLo.axml" />
+    <AndroidResource Include="Resources\layout\AddContacts.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
