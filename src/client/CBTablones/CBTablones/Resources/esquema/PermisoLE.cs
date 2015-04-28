@@ -3,11 +3,11 @@ using SQLite;
 
 namespace CBTablones
 {
-	[Table("PERMISOS")]
-	public class Permiso
+	[Table("PERMISOSLE")]
+	public class PermisoLE
 	{
 		#region Constructor
-		public Permiso()
+		public PermisoLE()
 		{			
 		}
 		#endregion

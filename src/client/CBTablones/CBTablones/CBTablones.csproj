@@ -51,7 +51,7 @@
     <Compile Include="Resources\esquema\Entorno.cs" />
     <Compile Include="Resources\esquema\Mensaje.cs" />
     <Compile Include="Resources\esquema\Contacto.cs" />
-    <Compile Include="Resources\esquema\Permisos.cs" />
+    <Compile Include="Resources\esquema\PermisoLE.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
