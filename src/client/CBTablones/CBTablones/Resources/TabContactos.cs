@@ -36,6 +36,7 @@ namespace CBTablones
 
 		}
 
+		// MÉTODO PARA OBTENER EL RESULTADO DE LA ACTIVIDAD ABIERTA PARA RESULTADO
 		protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
 		{
 			base.OnActivityResult(requestCode, resultCode, data);
