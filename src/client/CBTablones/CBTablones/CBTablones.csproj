@@ -15,7 +15,6 @@
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
     <AssemblyName>CBTablones</AssemblyName>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
-	<TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
     <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -52,16 +51,13 @@
     <Compile Include="Resources\esquema\Entorno.cs" />
     <Compile Include="Resources\esquema\Mensaje.cs" />
     <Compile Include="Resources\esquema\Contacto.cs" />
-<<<<<<< HEAD
     <Compile Include="Resources\TabContactos.cs" />
     <Compile Include="Resources\TabConversaciones.cs" />
     <Compile Include="Resources\TabTablones.cs" />
-=======
     <Compile Include="FormContacto.cs" />
     <Compile Include="Resources\adapter\ContactoAdapter.cs" />
     <Compile Include="ListaContactos.cs" />
     <Compile Include="Resources\esquema\PermisoLE.cs" />
->>>>>>> origin/desarrollo
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
