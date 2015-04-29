@@ -89,6 +89,12 @@ namespace CBTablones
 				{
 					Entorno.DB.Insert (_NuevoContacto);
 					Toast.MakeText (this,"Contacto agregado correctamente",ToastLength.Long).Show ();
+
+					//************CODIGO AÑADIDO POR ADRIAN*********************************/
+					/**/Intent myIntent = new Intent (this, typeof(FormContacto));
+					/**/SetResult (Result.Ok, myIntent);
+					/**/Finish();
+					//************CODIGO AÑADIDO POR ADRIAN*********************************/
 				}
 				catch(Exception ex)
 				{

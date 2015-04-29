@@ -77,6 +77,7 @@
     <AndroidResource Include="Resources\layout\ListaContactosItemLo.axml" />
     <AndroidResource Include="Resources\layout\ListaContactoLo.axml" />
     <AndroidResource Include="Resources\layout\AddContacts.axml" />
+    <AndroidResource Include="Resources\layout\TabContactos.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

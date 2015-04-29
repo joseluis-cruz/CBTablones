@@ -23,12 +23,12 @@ namespace CBTablones
 			// Inicializar conexión a la base de datos
 			Entorno.Init ();
 
-			// Poned aquí el código que abre vuestra actividad:
-
 			// SE AÑADEN LOS ITEMS DEL TABHOST
 			CreateTab(typeof(TabContactos), "tab_contactos", "Contactos");
 			CreateTab(typeof(TabConversaciones), "tab_conversaciones", "Mensajes");
 			CreateTab(typeof(TabTablones), "tab_tablones", "Tablones");
+
+
 
 		}
 
@@ -44,7 +44,6 @@ namespace CBTablones
 
 			TabHost.AddTab(spec);
 		}
-
 	}
 }
 
