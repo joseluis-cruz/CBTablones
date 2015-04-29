@@ -51,9 +51,16 @@
     <Compile Include="Resources\esquema\Entorno.cs" />
     <Compile Include="Resources\esquema\Mensaje.cs" />
     <Compile Include="Resources\esquema\Contacto.cs" />
+<<<<<<< HEAD
     <Compile Include="Resources\TabContactos.cs" />
     <Compile Include="Resources\TabConversaciones.cs" />
     <Compile Include="Resources\TabTablones.cs" />
+=======
+    <Compile Include="FormContacto.cs" />
+    <Compile Include="Resources\adapter\ContactoAdapter.cs" />
+    <Compile Include="ListaContactos.cs" />
+    <Compile Include="Resources\esquema\PermisoLE.cs" />
+>>>>>>> origin/desarrollo
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -68,10 +75,16 @@
     <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\layout\FormContactoLo.axml" />
+    <AndroidResource Include="Resources\layout\TextViewItemLo.axml" />
+    <AndroidResource Include="Resources\layout\ListaContactosItemLo.axml" />
+    <AndroidResource Include="Resources\layout\ListaContactoLo.axml" />
+    <AndroidResource Include="Resources\layout\AddContacts.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Resources\esquema\" />
     <Folder Include="Resources\librerias\" />
+    <Folder Include="Resources\adapter\" />
   </ItemGroup>
 </Project>
