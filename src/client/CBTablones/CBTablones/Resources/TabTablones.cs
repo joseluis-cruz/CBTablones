@@ -1,0 +1,28 @@
+﻿
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+using Android.App;
+using Android.Content;
+using Android.OS;
+using Android.Runtime;
+using Android.Views;
+using Android.Widget;
+
+namespace CBTablones
+{	// ACTIVIDAD PARA LA CREACION DEL ITEM TAB TABLONES
+	[Activity]			
+	public class TabTablones : Activity
+	{
+		protected override void OnCreate (Bundle bundle)
+		{
+			base.OnCreate (bundle);
+
+			// Create your application here
+		}
+
+	}
+}
+

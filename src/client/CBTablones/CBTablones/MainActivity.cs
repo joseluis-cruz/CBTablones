@@ -6,11 +6,12 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Java.Lang;
 
 namespace CBTablones
 {
-	[Activity (Label = "CBTablones", MainLauncher = true, Icon = "@drawable/icon")]
-	public class MainActivity : Activity
+	[Activity (Label = "Tablones", MainLauncher = true, Icon = "@drawable/icon")]
+	public class MainActivity : TabActivity
 	{
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -24,7 +25,26 @@ namespace CBTablones
 
 			// Poned aquí el código que abre vuestra actividad:
 
+			// SE AÑADEN LOS ITEMS DEL TABHOST
+			CreateTab(typeof(TabContactos), "tab_contactos", "Contactos");
+			CreateTab(typeof(TabConversaciones), "tab_conversaciones", "Mensajes");
+			CreateTab(typeof(TabTablones), "tab_tablones", "Tablones");
+
 		}
+
+		// MÉTODO PARA CREAR LOS ITEMS DEL TABHOST
+		private void CreateTab(Type activityType, string tag, string label)
+		{
+			var intent = new Intent(this, activityType);
+			intent.AddFlags(ActivityFlags.NewTask);
+
+			var spec = TabHost.NewTabSpec(tag);
+			spec.SetIndicator(label);
+			spec.SetContent(intent);
+
+			TabHost.AddTab(spec);
+		}
+
 	}
 }
 
