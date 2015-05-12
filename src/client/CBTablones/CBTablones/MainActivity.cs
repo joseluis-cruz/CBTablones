@@ -1,5 +1,4 @@
 ﻿using System;
-
 using Android.App;
 using Android.Content;
 using Android.Runtime;
@@ -22,6 +21,8 @@ namespace CBTablones
 
 			// Inicializar conexión a la base de datos
 			Entorno.Init ();
+			Entorno.DB.CreateTable<Contacto> ();
+
 
 			// SE AÑADEN LOS ITEMS DEL TABHOST
 			CreateTab(typeof(TabContactos), "tab_contactos", "Contactos");

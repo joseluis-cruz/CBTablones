@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using Android.Widget;
 using Android.App;
 using Android.Views;
+using Android.Graphics;
+using Android.Content.PM;
 
 namespace CBTablones
 {
@@ -33,9 +35,20 @@ namespace CBTablones
 			if (view == null)
 				view = context.LayoutInflater.Inflate (Resource.Layout.ListaContactosItemLo, null);
 			view.FindViewById<TextView> (Resource.Id.tvAlias).Text = item.Alias.ToString ();
+			var _ImageView =view.FindViewById<ImageView>(Resource.Id.imgContacto);
 
-			/*int _IDImagenContacto = context.Resources.GetIdentifier("dorsal_"+item.dorsal.ToString(),"drawable", context.PackageName);
-			view.FindViewById<ImageView> (Resource.Id.imgCorredor).SetImageResource (id_img_corredor);*/
+			App._dir = new Java.IO.File(Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryPictures), "CTablones");
+			App._file = new Java.IO.File(App._dir, String.Format("photo_{0}.jpg", item.ID));
+			int height = 100;
+			int width = 100 ;
+			App.bitmap = App._file.Path.LoadAndResizeBitmap (width, height);
+
+			if (App.bitmap != null) {
+				view.FindViewById<ImageView>(Resource.Id.imgContacto).SetImageBitmap (App.bitmap);
+				App.bitmap = null;
+			}
+
+
 
 			return view;
 		}

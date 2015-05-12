@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:background="#FFFFFF">
     <ImageView
-        android:id="@+id/imgCorredor"
+        android:id="@+id/imgContacto"
         android:layout_width="100dp"
         android:layout_height="100dp" />
     <LinearLayout
