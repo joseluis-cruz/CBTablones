@@ -61,6 +61,7 @@
     <Compile Include="ListaContactos.cs" />
     <Compile Include="Resources\esquema\PermisoLE.cs" />
     <Compile Include="BitmapHelpers.cs" />
+    <Compile Include="Resources\AddContacts.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
