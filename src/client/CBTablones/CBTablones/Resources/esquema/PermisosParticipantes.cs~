@@ -4,11 +4,11 @@ using SQLite;
 namespace CBTablones
 {
 	// Tabla con la relación "tablón-contactos (participantes)"
-	[Table("PERMISOSLE")]
-	public class PermisoLE
+	[Table("PERMISOSPARTICIPANTES")]
+	public class PermisosParticipantes
 	{
 		#region Constructor
-		public PermisoLE()
+		public PermisosParticipantes()
 		{			
 		}
 		#endregion

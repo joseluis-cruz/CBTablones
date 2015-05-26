@@ -15,13 +15,8 @@
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
     <AssemblyName>CBTablones</AssemblyName>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
-
     <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
-
-    <TargetFrameworkVersion>v4.4.87</TargetFrameworkVersion>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-	
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -64,13 +59,14 @@
     <Compile Include="FormContacto.cs" />
     <Compile Include="Resources\adapter\ContactoAdapter.cs" />
     <Compile Include="ListaContactos.cs" />
-    <Compile Include="Resources\esquema\PermisoLE.cs" />
     <Compile Include="BitmapHelpers.cs" />
     <Compile Include="Resources\AddContacts.cs" />
     <Compile Include="Resources\esquema\Cliente.cs" />
     <Compile Include="Resources\adapter\TablonAdapter.cs" />
     <Compile Include="Resources\esquema\Tablon.cs" />
     <Compile Include="CrearTablon.cs" />
+    <Compile Include="Resources\adapter\ParticipanteAdapter.cs" />
+    <Compile Include="Resources\esquema\Participante.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

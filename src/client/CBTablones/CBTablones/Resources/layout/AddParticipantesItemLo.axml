@@ -1,45 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
-    android:layout_width="fill_parent"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#FFFFFF">
+    android:background="#fff5f5f5"
+    android:showDividers="middle"
+    android:gravity="center">
     <ImageView
-        android:id="@+id/imgCorredor"
-        android:layout_width="100dp"
-        android:layout_height="100dp" />
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="0dp"
-        android:layout_height="fill_parent"
-        android:layout_weight="1">
-        <TextView
-            android:id="@+id/tvDorsal"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0000"
-            android:textColor="#000000"
-            android:layout_marginTop="10dp"
-            android:typeface="normal"
-            android:textStyle="bold" />
-        <TextView
-            android:id="@+id/tvApodo"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="_APODO_CORREDOR_"
-            android:textColor="#444444"
-            android:layout_marginTop="10dp"
-            android:typeface="normal"
-            android:textStyle="bold" />
-        <TextView
-            android:id="@+id/tvNombre"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="_NOMBRE_CORREDOR_"
-            android:textColor="#888888"
-            android:typeface="normal"
-            android:textStyle="bold" />
-    </LinearLayout>
+        android:id="@+id/imgParticipante"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:drawable/ic_menu_myplaces" />
+    <TextView
+        android:text="_NOMBRE_PARTICIPANTE_"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tvParticipante"
+        android:gravity="center_vertical"
+        android:textColor="#ff303030"
+        android:padding="5dp"
+        android:textStyle="normal"
+        android:typeface="sans" />
 </LinearLayout>

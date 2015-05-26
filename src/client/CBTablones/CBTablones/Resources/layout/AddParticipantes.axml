@@ -3,62 +3,29 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#ffececec">
-    <LinearLayout
-        android:orientation="horizontal"
-        android:minWidth="25px"
-        android:minHeight="25px"
+    android:background="#ffececec"
+    android:gravity="center_horizontal">
+    <TextView
+        android:text="Añadir participantes"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/tvTitulo"
+        android:gravity="center"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:visibility="visible"
+        android:background="#ff212121"
+        android:textColor="#ff00aaff"
+        android:typeface="sans"
+        android:textStyle="normal" />
+    <Button
+        android:text="Buscar en contactos..."
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/linearLayout1"
-        android:textAlignment="center">
-        <TextView xmlns:tools="http://schemas.android.com/tools"
-            android:text="Text"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:id="@+id/textView1"
-            tools:text="Añadir participantes"
-            android:background="#fffdfdfd"
-            android:textAlignment="center"
-            android:phoneNumber="false"
-            android:password="false"
-            android:textColor="#ff0089ff" />
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/linearLayout2"
-        android:background="@android:drawable/gallery_thumb">
-        <ImageButton
-            android:src="@android:drawable/ic_menu_gallery"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageButton1"
-            android:background="@android:drawable/ic_menu_sort_alphabetically"
-            android:layout_weight="1" />
-        <TextView
-            android:text="Text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView2"
-            xmlns:tools="http://schemas.android.com/tools"
-            tools:text="Nombre del contacto"
-            android:gravity="center"
-            android:textColor="#ffcccccc"
-            android:layout_weight="1" />
-        <ImageButton
-            android:src="@android:drawable/ic_menu_gallery"
-            android:id="@+id/imageButton2"
-            android:background="@android:drawable/ic_input_add"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_weight="1" />
-    </LinearLayout>
+        android:id="@+id/btAddParticipante" />
     <ListView
         android:minWidth="25px"
         android:minHeight="25px"
-        android:id="@+id/listView1"
+        android:id="@+id/lvParticipantes"
         android:background="#ffffffff"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
