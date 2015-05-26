@@ -60,11 +60,14 @@ namespace CBTablones
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f05002c
-			public const int LvTablones = 2131034156;
+			// aapt resource value: 0x7f05002d
+			public const int LvTablones = 2131034157;
 			
-			// aapt resource value: 0x7f05002b
-			public const int addContacto = 2131034155;
+			// aapt resource value: 0x7f05002c
+			public const int addContacto = 2131034156;
+			
+			// aapt resource value: 0x7f050020
+			public const int btnAbrirLogReg = 2131034144;
 			
 			// aapt resource value: 0x7f050015
 			public const int btnAceptar = 2131034133;
@@ -72,20 +75,20 @@ namespace CBTablones
 			// aapt resource value: 0x7f050016
 			public const int btnCancelar = 2131034134;
 			
-			// aapt resource value: 0x7f05002d
-			public const int btnCrearTablon = 2131034157;
-			
-			// aapt resource value: 0x7f05001e
-			public const int btnLogin = 2131034142;
+			// aapt resource value: 0x7f05002e
+			public const int btnCrearTablon = 2131034158;
 			
 			// aapt resource value: 0x7f05001d
 			public const int btnLoginAceptar = 2131034141;
 			
+			// aapt resource value: 0x7f05001e
+			public const int btnPrincipalLogin = 2131034142;
+			
 			// aapt resource value: 0x7f05001f
 			public const int btnPrincipalRegistrar = 2131034143;
 			
-			// aapt resource value: 0x7f050029
-			public const int btnRegistrarEnviar = 2131034153;
+			// aapt resource value: 0x7f05002a
+			public const int btnRegistrarEnviar = 2131034154;
 			
 			// aapt resource value: 0x7f05000b
 			public const int btnSiguiente = 2131034123;
@@ -108,32 +111,26 @@ namespace CBTablones
 			// aapt resource value: 0x7f05001c
 			public const int etLoginPassword = 2131034140;
 			
-			// aapt resource value: 0x7f050026
-			public const int etRegistrarCaducidad = 2131034150;
-			
-			// aapt resource value: 0x7f050021
-			public const int etRegistrarEmail = 2131034145;
-			
-			// aapt resource value: 0x7f050027
-			public const int etRegistrarEstado = 2131034151;
-			
-			// aapt resource value: 0x7f050020
-			public const int etRegistrarNombre = 2131034144;
-			
-			// aapt resource value: 0x7f050023
-			public const int etRegistrarPassword = 2131034147;
-			
-			// aapt resource value: 0x7f050024
-			public const int etRegistrarRepPassword = 2131034148;
+			// aapt resource value: 0x7f050022
+			public const int etRegistrarEmail = 2131034146;
 			
 			// aapt resource value: 0x7f050028
-			public const int etRegistrarServidor = 2131034152;
+			public const int etRegistrarEstado = 2131034152;
 			
-			// aapt resource value: 0x7f050022
-			public const int etRegistrarUsuario = 2131034146;
+			// aapt resource value: 0x7f050021
+			public const int etRegistrarNombre = 2131034145;
+			
+			// aapt resource value: 0x7f050024
+			public const int etRegistrarPassword = 2131034148;
 			
 			// aapt resource value: 0x7f050025
-			public const int etRegistrarVolatilidad = 2131034149;
+			public const int etRegistrarRepPassword = 2131034149;
+			
+			// aapt resource value: 0x7f050029
+			public const int etRegistrarServidor = 2131034153;
+			
+			// aapt resource value: 0x7f050023
+			public const int etRegistrarUsuario = 2131034147;
 			
 			// aapt resource value: 0x7f050003
 			public const int imageButton1 = 2131034115;
@@ -168,8 +165,8 @@ namespace CBTablones
 			// aapt resource value: 0x7f050006
 			public const int listView1 = 2131034118;
 			
-			// aapt resource value: 0x7f05002a
-			public const int listViewTabContact = 2131034154;
+			// aapt resource value: 0x7f05002b
+			public const int listViewTabContact = 2131034155;
 			
 			// aapt resource value: 0x7f050017
 			public const int lvContactos = 2131034135;
@@ -177,11 +174,17 @@ namespace CBTablones
 			// aapt resource value: 0x7f050012
 			public const int spCaducidad = 2131034130;
 			
+			// aapt resource value: 0x7f050026
+			public const int spRegistrarCaducidad = 2131034150;
+			
+			// aapt resource value: 0x7f050027
+			public const int spRegistrarVolatilidad = 2131034151;
+			
 			// aapt resource value: 0x7f050013
 			public const int spVolatilidad = 2131034131;
 			
-			// aapt resource value: 0x7f05002e
-			public const int textItem = 2131034158;
+			// aapt resource value: 0x7f05002f
+			public const int textItem = 2131034159;
 			
 			// aapt resource value: 0x7f050001
 			public const int textView1 = 2131034113;

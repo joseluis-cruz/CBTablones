@@ -11,7 +11,7 @@ using SQLite;
 namespace CBTablones
 {
 	[Activity (Label = "LogRegActivity")]
-	public class LoginReg : Activity
+	public class LogRegActivity : Activity
 	{
 		public static SQLiteConnection db;
 
@@ -20,13 +20,13 @@ namespace CBTablones
 			base.OnCreate (bundle);
 
 			// Set our view from the "main" layout resource
-			SetContentView (Resource.Layout.Main);
+			SetContentView (Resource.Layout.LogRegLo);
 
 			// Inicializar conexión a la base de datos
 			Entorno.Init ();
 
 			// Poned aquí el código que abre vuestra actividad:
-			FindViewById<Button> (Resource.Id.btnLogin).Click += abreLogin;
+			FindViewById<Button> (Resource.Id.btnPrincipalLogin).Click += abreLogin;
 			FindViewById<Button> (Resource.Id.btnPrincipalRegistrar).Click += abreRegistrar;
 		}
 		public void abreLogin(object sender, EventArgs e)
