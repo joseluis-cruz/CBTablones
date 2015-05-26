@@ -12,6 +12,9 @@ using Android.Views;
 using Android.Widget;
 
 using SQLite;
+using System.Json;
+using System.IO;
+using System.Runtime.Serialization.Json;
 
 namespace CBTablones
 {
@@ -32,7 +35,7 @@ namespace CBTablones
 			SetContentView(Resource.Layout.RegistrarLo);
 
 			Entorno.Init ();
-			//Entorno.DB.Execute ("DROP TABLE IF EXISTS DATOS_USUARIO");
+			Entorno.DB.Execute ("DROP TABLE IF EXISTS DATOS_USUARIO");
 			Entorno.DB.CreateTable<DatosUsuario> ();
 
 			_spCaducidad = FindViewById<Spinner> (Resource.Id.spRegistrarCaducidad);
@@ -56,6 +59,20 @@ namespace CBTablones
 				_usuario.Servidor = FindViewById<EditText>(Resource.Id.etRegistrarServidor).Text;
 				Entorno.DB.Insert(_usuario);
 				Toast.MakeText(this, "Se ha creado un nuevo usuario", ToastLength.Long).Show();
+				//IP DE JULIO : 10.32.73.78
+				MemoryStream stream1 = new MemoryStream ();
+				DataContractJsonSerializer ser = new DataContractJsonSerializer (typeof(DatosUsuario));
+				// ser.WriteObject (stream1, p1);
+				// ser.WriteObject (stream1, personas);
+				ser.WriteObject (stream1, _usuario);
+				stream1.Position = 0;
+				StreamReader sr = new StreamReader (stream1);
+				string objetoentexto = sr.ReadToEnd ();
+				Console.WriteLine ("Objeto json = {0}", objetoentexto);
+
+				Cliente.Url = "http://10.32.73.78/api";
+				Cliente.sendCmd ("", "", "UserRegistration", objetoentexto);
+				
 			};
 		}
 
