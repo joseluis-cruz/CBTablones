@@ -16,8 +16,6 @@
     <AssemblyName>CBTablones</AssemblyName>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -63,7 +61,7 @@
     <Compile Include="BitmapHelpers.cs" />
     <Compile Include="Resources\AddContacts.cs" />
     <Compile Include="Resources\adapter\TablonAdapter.cs" />
-	<Compile Include="Resources\esquema\Tablon.cs" />
+    <Compile Include="Resources\esquema\Tablon.cs" />
     <Compile Include="CrearTablon.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -83,11 +81,12 @@
     <AndroidResource Include="Resources\layout\TextViewItemLo.axml" />
     <AndroidResource Include="Resources\layout\ListaContactosItemLo.axml" />
     <AndroidResource Include="Resources\layout\ListaContactoLo.axml" />
-    <AndroidResource Include="Resources\layout\AddContacts.axml" />
     <AndroidResource Include="Resources\layout\TabContactos.axml" />
     <AndroidResource Include="Resources\layout\TabTablones.axml" />
     <AndroidResource Include="Resources\layout\ListaTablonesItemLo.axml" />
     <AndroidResource Include="Resources\layout\CrearTablon.axml" />
+    <AndroidResource Include="Resources\layout\AddParticipantes.axml" />
+    <AndroidResource Include="Resources\layout\AddParticipantesItemLo.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
