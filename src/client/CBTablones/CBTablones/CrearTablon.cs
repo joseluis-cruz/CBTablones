@@ -17,8 +17,8 @@ namespace CBTablones
 	public class CrearTablon : Activity
 	{
 		private Button _BtnSiguiente;
-		private String[] _ListaCaducidades = {"1 Hora","1 Dia","1 Mes","Nunca"};
-		private String[] _ListaVolatilidades={"5 Segundos","20 Segundos","1 Minuto","1 Hora","Nunca"};
+		private String[] _ListaCaducidades = { "1 Hora", "1 Dia", "1 Mes", "Nunca" };
+		private String[] _ListaVolatilidades = { "5 Segundos", "20 Segundos", "1 Minuto", "1 Hora", "Nunca" };
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -30,13 +30,13 @@ namespace CBTablones
 
 			_BtnSiguiente = FindViewById<Button> (Resource.Id.btnCrearTablon);
 
-			_BtnSiguiente.Click += delegate {AbrirVentana (typeof(AddContactsTablon));};
+			//José Luis - OJO: AddContactsTablon no está en el proyecto!!!! - _BtnSiguiente.Click += delegate {AbrirVentana (typeof(AddContactsTablon));};
 
 
 
 		}
 
-		private void AbrirVentana(Type activityType)
+		private void AbrirVentana (Type activityType)
 		{
 			var myIntent = new Intent (Application.Context, activityType);
 			StartActivity (myIntent);
