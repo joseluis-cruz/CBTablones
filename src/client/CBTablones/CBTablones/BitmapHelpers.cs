@@ -30,12 +30,15 @@ namespace CBTablones
 			options.InSampleSize = inSampleSize;
 			options.InJustDecodeBounds = false;
 			Bitmap resizedBitmap = BitmapFactory.DecodeFile(fileName, options);
-			MemoryStream stream = new MemoryStream ();
-			resizedBitmap.Compress (Bitmap.CompressFormat.Jpeg,25,stream);
-			byte[] bitmapData = stream.ToArray ();
+			if (resizedBitmap != null) {
+				MemoryStream stream = new MemoryStream ();
+				resizedBitmap.Compress (Bitmap.CompressFormat.Jpeg,25,stream);
+				byte[] bitmapData = stream.ToArray ();
 
-			resizedBitmap = BitmapFactory.DecodeByteArray(bitmapData , 0, bitmapData.Length);
-			return resizedBitmap;
+				resizedBitmap = BitmapFactory.DecodeByteArray (bitmapData, 0, bitmapData.Length);
+				return resizedBitmap;
+			} else
+				return null;
 		}
 	}
 }
