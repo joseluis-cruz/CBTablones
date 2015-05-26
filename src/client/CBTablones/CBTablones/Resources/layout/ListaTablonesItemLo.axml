@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:background="#FFFFFF">
     <ImageView
-        android:id="@+id/imgContacto"
+        android:id="@+id/imgTablon"
         android:layout_width="100dp"
         android:layout_height="100dp" />
     <LinearLayout
@@ -14,12 +14,12 @@
         android:layout_height="match_parent"
         android:layout_weight="1">
         <TextView
-            android:id="@+id/tvAlias"
+            android:id="@+id/tvNombre"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
-            android:text="Pepote Grillo"
+            android:text="Tablon 1"
             android:textColor="#444444"
             android:typeface="normal"
             android:textStyle="bold"

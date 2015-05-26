@@ -2,15 +2,20 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:background="#ffececec">
     <TextView xmlns:tools="http://schemas.android.com/tools"
         android:text="Text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView1"
         tools:text="Añadir participantes"
-        android:background="#ff736e6e"
-        android:textAlignment="center" />
+        android:background="#ff0071ff"
+        android:textAlignment="center"
+        android:height="25dp"
+        android:phoneNumber="false"
+        android:password="false"
+        android:drawablePadding="5dp" />
     <LinearLayout
         android:orientation="horizontal"
         android:minWidth="25px"
@@ -29,12 +34,12 @@
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:scrollbars="none" />
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/listView1"
+            android:background="#ffffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </LinearLayout>
-    <ListView
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/listView1"
-        android:background="#ffffffff" />
 </LinearLayout>
