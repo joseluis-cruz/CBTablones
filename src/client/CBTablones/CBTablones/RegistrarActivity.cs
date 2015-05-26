@@ -31,9 +31,9 @@ namespace CBTablones
 			base.OnCreate (bundle);
 			SetContentView(Resource.Layout.RegistrarLo);
 
-			//Entorno.Init ();
-			Entorno.DB.CreateTable<DatosUsuario> ();
+			Entorno.Init ();
 			//Entorno.DB.Execute ("DROP TABLE IF EXISTS DATOS_USUARIO");
+			Entorno.DB.CreateTable<DatosUsuario> ();
 
 			_spCaducidad = FindViewById<Spinner> (Resource.Id.spRegistrarCaducidad);
 			_spCaducidad.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs> (spinnerCad_ItemSelected);
