@@ -6,6 +6,7 @@ ehthumbs.db
 obj/
 bin/
 *.userprefs
+Resource.designer.cs
 
 # Folder config file
 Desktop.ini

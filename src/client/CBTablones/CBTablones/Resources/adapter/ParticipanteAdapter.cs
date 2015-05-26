@@ -10,6 +10,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Android;
 
 namespace CBTablones
 {
@@ -38,7 +39,7 @@ namespace CBTablones
 
 			View view = convertView;
 			if (view == null)
-				view = context.LayoutInflater.Inflate (Resource.Layout.AddParticipantes, null);
+				view = context.LayoutInflater.Inflate (Resource.Layout.AddParticipantesItemLo, null);
 			view.FindViewById<TextView> (Resource.Id.tvParticipante).Text = item.NombreContacto;
 
 			return view;

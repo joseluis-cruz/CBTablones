@@ -11,4 +11,14 @@
 	<string name="cancelar">Cancelar</string>
 	<string name="mostrar_contacto">Mostrar Contactos</string>
 	<string name="tomar_fotos">Tomar Foto</string>
+	<string name="btnlogin">Ingresar</string>
+	<string name="btnregistrar">Registrar</string>
+	<string name="usuario">Nombre de usuario</string>
+	<string name="password">Contraseña</string>
+	<string name="nombre">Nombre y apellidos</string>
+	<string name="repetirpassword">Repita la contraseña</string>
+	<string name="estado">Estado</string>
+	<string name="enviar">Enviar</string>
+	<string name="email">Correo electrónico</string>
+	<string name="servidor">URL del servidor a conectar</string>
 </resources>
