@@ -4,19 +4,33 @@ using SQLite;
 namespace CBTablones
 {
 	// Tabla con la relación "tablón-contactos (participantes)"
-	[Table("PARTICIPANTE")]
+	[Table("PARTICIPANTES")]
 	public class Participante
 	{
-		[PrimaryKey]
-		public int IdTablon{ get; set; }
+		#region Constructor
+		public Participante ()
+		{
+		}
+		#endregion
 
+		#region Propiedades
+
+		// proporcionado por la llamada de "añadir participantes" (Autor: Jonathan)
 		[PrimaryKey]
-		public int IdContact{ get; set; }
+		public int IDTablonP { get; set; }
+
+		// Lo obtendremos de la lista de contactos
+		public int IDP { get; set; }
+
+		[MaxLength(100)]
+		public string NombreP{ get; set; }
+
+		[MaxLength(50),Unique]
+		public string AliasP { get; set; }
 
 		[MaxLength(1)]
-		public string Permiso{ get; set; }
+		public string PermisoLEP { get; set; }
 
-		[MaxLength(30)]
-		public string NombreContacto{ get; set; }
+		#endregion
 	}
 }

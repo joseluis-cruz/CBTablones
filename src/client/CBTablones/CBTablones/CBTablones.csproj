@@ -68,6 +68,7 @@
     <Compile Include="CrearTablon.cs" />
     <Compile Include="Resources\adapter\ParticipanteAdapter.cs" />
     <Compile Include="Resources\esquema\Participante.cs" />
+    <Compile Include="Resources\AddParticipantes.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

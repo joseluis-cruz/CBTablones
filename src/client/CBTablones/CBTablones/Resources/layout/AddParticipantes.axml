@@ -5,23 +5,23 @@
     android:layout_height="fill_parent"
     android:background="#ffececec"
     android:gravity="center_horizontal">
-    <TextView
-        android:text="Añadir participantes"
+    <TextView xmlns:tools="http://schemas.android.com/tools"
+        android:text="Aquí quiero mostrar el nombre del tablón creado"
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:id="@+id/tvTitulo"
         android:gravity="center"
-        xmlns:tools="http://schemas.android.com/tools"
         tools:visibility="visible"
         android:background="#ff212121"
         android:textColor="#ff00aaff"
         android:typeface="sans"
         android:textStyle="normal" />
     <Button
-        android:text="Buscar en contactos..."
+        android:text="Añadir participipantes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btAddParticipante" />
+        android:id="@+id/btAddParticipante"
+        android:background="#ff00aaff" />
     <ListView
         android:minWidth="25px"
         android:minHeight="25px"

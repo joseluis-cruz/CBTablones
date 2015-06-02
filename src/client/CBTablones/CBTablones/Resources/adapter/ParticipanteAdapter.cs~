@@ -1,20 +1,13 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
 namespace CBTablones
 {
-	[Activity (Label = "ParticipanteAdapter")]			
-	public class ParticipanteAdapter : Activity
+	public class ParticipanteAdapter : BaseAdapter<Participante>
 	{
 		List <Participante> items;
 		Activity context;
@@ -32,14 +25,28 @@ namespace CBTablones
 			return position;
 		}
 
-		public override View GetView (int position, View convertView, ViewGroup parent)
+		public override Android.Views.View GetView (int position, View convertView, Android.Views.ViewGroup parent)
 		{
 			var item = items [position];
 
 			View view = convertView;
 			if (view == null)
-				view = context.LayoutInflater.Inflate (Resource.Layout.AddParticipantes, null);
-			view.FindViewById<TextView> (Resource.Id.tvParticipante).Text = item.NombreContacto;
+				view = context.LayoutInflater.Inflate (Resource.Layout.AddParticipantesItemLo, null);
+			var _ImageView = view.FindViewById <ImageView> (Resource.Id.imgParticipante);
+			view.FindViewById <TextView> (Resource.Id.tvParticipante).Text = item.NombreP;
+			view.FindViewById <TextView> (Resource.Id.tvAlias).Text = item.AliasP;
+
+			// Código de Pedro; Entiend que para cargar la imágen
+			App._dir = new Java.IO.File(Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryPictures), "CTablones");
+			App._file = new Java.IO.File(App._dir, String.Format("photo_{0}.jpg", item.IDP));
+			int height = 100;
+			int width = 100 ;
+			App.bitmap = App._file.Path.LoadAndResizeBitmap (width, height);
+
+			if (App.bitmap != null) {
+				view.FindViewById<ImageView>(Resource.Id.imgParticipante).SetImageBitmap (App.bitmap);
+				App.bitmap = null;
+			}
 
 			return view;
 		}

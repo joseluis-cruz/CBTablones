@@ -3,22 +3,64 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#fff5f5f5"
     android:showDividers="middle"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="#FFFFFF">
     <ImageView
         android:id="@+id/imgParticipante"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:background="@android:drawable/ic_menu_myplaces" />
-    <TextView
-        android:text="_NOMBRE_PARTICIPANTE_"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:id="@+id/tvParticipante"
-        android:gravity="center_vertical"
-        android:textColor="#ff303030"
-        android:padding="5dp"
-        android:textStyle="normal"
-        android:typeface="sans" />
+        android:id="@+id/linearLayout2">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvParticipante"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:typeface="normal"
+                android:textColor="#444444"
+                android:text="Nombre Apellido"
+                android:textAlignment="gravity"
+                android:layout_marginLeft="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:text="Alias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvAlias"
+                android:textColor="#ffcdcdcd"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout3">
+            <ToggleButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/toggleButton1"
+                android:scrollHorizontally="true" />
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
